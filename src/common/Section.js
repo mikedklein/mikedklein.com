@@ -13,12 +13,26 @@ const sectionStyle = style({
   color: colors.white
 });
 
-const Section = (props) => (
-  <section className={sectionStyle} style={props.style}>
+const Section = (props) => {
+  let content = (
     <div className={container}>
       {props.children}
     </div>
-  </section>
-);
+  );
+
+  if (props.full) {
+    content = (
+      <div>
+        {props.children}
+      </div>
+    );
+  }
+
+  return (
+    <section className={sectionStyle} style={props.style}>
+      {content}
+    </section>
+  );
+};
 
 export { Section };

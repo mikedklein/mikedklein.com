@@ -17,7 +17,7 @@ const About = () => (
     <SectionText>
       I've been doing this for about 7 years now for small start-ups to
       enterprise level government solutions. I'm currently applying my
-      craft for small health tech start-up in Reston, VA.
+      craft for a small health tech start-up in Reston, VA.
     </SectionText>
   </Section>
 );
