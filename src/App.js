@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { style } from 'glamor';
-import { container } from 'glamor/ous';
-import { TitleText, ParaText, MiniHR } from './common';
-import colors from './theme/colors';
-import me from './images/Me.jpeg';
+import Header from './sections/Header';
+import About from './sections/About';
+
 
 const appStyle = style({
   textAlign: 'center',
@@ -11,39 +10,12 @@ const appStyle = style({
   width: '100%',
 });
 
-const headerStyle = style({
-  height: '100%',
-  width: '100%',
-  backgroundColor: 'white',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center'
-});
-
-const imgStyle = style({
-    height: 150,
-    width: 150,
-    margin: 0,
-    padding: 0,
-    border: `2px solid ${colors.primaryBlue}`,
-    borderRadius: '50%'
-});
-
 class App extends Component {
   render() {
     return (
-      <div className={`${appStyle} ${container}`}>
-        <div {...headerStyle}>
-          <div>
-            <img src={me} {...imgStyle} alt="Mike" />
-          </div>
-          <TitleText>HAI</TitleText>
-          <MiniHR style={{ marginTop: '-30px' }} />
-          <ParaText style={{ marginTop: '30px' }}>
-            My name is Mike and I am a Front End Engineer.
-          </ParaText>
-        </div>
+      <div className={appStyle}>
+        <Header />
+        <About />
       </div>
     );
   }
