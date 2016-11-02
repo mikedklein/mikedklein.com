@@ -3,6 +3,7 @@ import { style } from 'glamor';
 import Header from './sections/Header';
 import About from './sections/About';
 import Live from './sections/Live';
+import Moar from './sections/Moar';
 
 
 const appStyle = style({
@@ -18,6 +19,7 @@ class App extends Component {
         <Header />
         <About />
         <Live />
+        <Moar />
       </div>
     );
   }

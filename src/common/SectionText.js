@@ -11,10 +11,18 @@ const sectionTextStyle = style({
   margin: 0,
 });
 
-const SectionText = (props) => (
-  <p {...sectionTextStyle} style={props.style}>
-    {props.children}
-  </p>
-);
+const SectionText = (props) => {
+  let className = `${sectionTextStyle}`;
+
+  if (props.className !== undefined) {
+    className += ` ${props.className}`;
+  }
+
+  return (
+    <p className={className} style={props.style}>
+      {props.children}
+    </p>
+  );
+};
 
 export { SectionText };

@@ -11,10 +11,18 @@ const paraTextStyle = style({
   margin: 0,
 });
 
-const ParaText = (props) => (
-  <p {...paraTextStyle} style={props.style}>
-    {props.children}
-  </p>
-);
+const ParaText = (props) => {
+  let className = `${paraTextStyle}`;
+
+  if (props.className !== undefined) {
+    className += ` ${props.className}`;
+  }
+
+  return (
+    <p className={className} style={props.style}>
+      {props.children}
+    </p>
+  );
+};
 
 export { ParaText };

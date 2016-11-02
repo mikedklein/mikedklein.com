@@ -14,6 +14,12 @@ const sectionStyle = style({
 });
 
 const Section = (props) => {
+  let className = `${sectionStyle}`;
+
+  if (props.className !== undefined) {
+    className += ` ${props.className}`;
+  }
+
   let content = (
     <div className={container}>
       {props.children}
@@ -29,7 +35,7 @@ const Section = (props) => {
   }
 
   return (
-    <section className={sectionStyle} style={props.style}>
+    <section className={className} style={props.style}>
       {content}
     </section>
   );
