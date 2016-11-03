@@ -15,12 +15,12 @@ const sectionStyle = style({
 });
 
 const ruleStyle = style({
-  marginTop: -10
+  marginTop: -5
 });
 
 const textStyle = style({
   color: colors.primaryGray,
-  marginTop: 20
+  marginTop: 10
 });
 
 const iconWrapper = style({

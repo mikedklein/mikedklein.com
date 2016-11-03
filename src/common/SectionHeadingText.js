@@ -4,7 +4,7 @@ import colors from '../theme/colors';
 
 const sectionHeadingTextStyle = style({
   color: colors.primaryGray,
-  fontSize: '8rem',
+  fontSize: '3.5rem',
   fontWeight: '400',
   fontFamily: 'Arial',
   margin: 0,

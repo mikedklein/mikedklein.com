@@ -4,8 +4,8 @@ import colors from '../theme/colors';
 
 const sectionTextStyle = style({
   color: colors.white,
-  fontSize: '3.5rem',
-  lineHeight: '3.8rem',
+  fontSize: '2rem',
+  lineHeight: '2.2rem',
   fontWeight: '300',
   fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
   margin: 0,

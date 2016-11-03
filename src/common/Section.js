@@ -1,6 +1,6 @@
 import React from 'react';
 import { style } from 'glamor';
-import { container } from 'glamor/ous';
+import { Container } from './';
 import colors from '../theme/colors';
 
 const sectionStyle = style({
@@ -21,9 +21,9 @@ const Section = (props) => {
   }
 
   let content = (
-    <div className={container}>
+    <Container>
       {props.children}
-    </div>
+    </Container>
   );
 
   if (props.full) {

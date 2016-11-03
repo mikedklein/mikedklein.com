@@ -18,8 +18,8 @@ const centeredText = style({
   top: 0,
   left: 0,
   zIndex: 2,
+  width: '100%',
   minHeight: '100%',
-  minWidth: '100%',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center'
@@ -36,7 +36,7 @@ const About = () => (
   >
     <div className={cover} />
     <div className={centeredText}>
-      <SectionText>
+      <SectionText style={{ maxWidth: '80%' }}>
         Currently residing just outside our nation’s capital.
       </SectionText>
     </div>

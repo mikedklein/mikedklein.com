@@ -28,7 +28,7 @@ const About = () => (
     <div>
       <img src={me} {...imgStyle} alt="Mike" />
     </div>
-    <TitleText>OH HAI!</TitleText>
+    <TitleText>HAI!</TitleText>
     <MiniHR style={{ marginTop: '-20px' }} />
     <ParaText style={{ marginTop: '20px' }}>
       My name is Mike and I am a Front End Engineer.

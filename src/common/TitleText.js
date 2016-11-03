@@ -4,7 +4,7 @@ import colors from '../theme/colors';
 
 const titleTextStyle = style({
   color: colors.primaryBlue,
-  fontSize: '15rem',
+  fontSize: '7rem',
   fontWeight: '500',
   fontFamily: 'Arial',
   margin: 0,
